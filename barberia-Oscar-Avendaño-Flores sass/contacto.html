@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/normalize.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+    <header>
+        <h1>Barber Shop</h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="ubicacion.html">Ubicación</a>
+        </nav>
+    </div>
+
+    <main id="mainContacto" class="sombra contenedor">
+
+        <h2>Contacto</h2>
+        <!--Un formulario puede servir, entre otras cosas, para enviar datos a otra página, capturar información que el 
+        usuario escribe y enviar datos a un servidor.-->
+        <form><!-- El elemento HTML form ( <form> ) representa una sección de un documento que contiene controles 
+        interactivos que permiten a un usuario enviar información a un <servidor web-->
+
+            <fieldset><!-- La <fieldset>etiqueta se utiliza para agrupar elementos relacionados en un formulario.
+                La <fieldset>etiqueta dibuja un cuadro alrededor de los elementos relacionados.
+                
+                -->
+
+
+                <!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web con 
+                el fin de recibir datos del usuario.-->
+                <label for="nombreapellido">Nombre y Apellido</label> <!--La etiqueta <label> es una etiqueta para la entrada 
+                de datos para el <input>.-->
+                <input type="text" id="nombreapellido" class="input-padron" required placeholder="Ingrese su Nombre"> <!-- El required es un atributo 
+                booleano. Cuando está presente, especifica que se debe completar un campo de entrada antes de enviar el formulario.-->
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" name="" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="" id="tel" class="input-padron" required placeholder="(XX) XXXXXXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron" required></textarea><!-- El 
+                <textarea>elemento se usa a menudo en un formulario, para recopilar las entradas de los usuarios, como 
+                comentarios o reseñas.-->
+
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Cómo le gustaria que lo contactemos?</legend> <!-- La etiqueta <leyenda> se utiliza para definir 
+                un título para el elemento <fieldset. -->
+                
+                <label for="radio-email">
+                    <input type="radio" value="email" id="radio-email" name="contactar">
+                        Email
+                
+                </label>
+
+                <label for="radio-telefono">
+                    <input type="radio" value="telefono" id="radio-telefono" name="contactar">
+                        Teléfono
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contactar" id="radio-whatsapp" name="contactar" checked> <!-- El checked es 
+                    un atributo booleano.
+                    Cuando está presente, especifica que un <input>elemento debe preseleccionarse (marcarse) cuando se 
+                    carga la página.
+                        
+                        El check-->
+                        WhatsApp
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En que horario prefiere ser atendido</legend>
+                <select> <!--El <select>elemento se utiliza para crear una lista desplegable.-->
+
+                <!--La <option>etiqueta define una opción en una lista de selección.
+                <option>los elementos van dentro de un elemento <select> , <optgroup> o <datalist> .-->
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+
+            </select>
+            
+            </fieldset>
+
+            <label class="checkbox" for="">
+                <input type="checkbox" checked>
+                    ¿Le gustaría recibir novedades de la Barbería Alura?
+            </label>
+
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+
+        <table> <!-- Las <table> HTML permiten a los desarrolladores web organizar los datos en filas y columnas-->
+            
+            <thead> <!-- La etiqueta <thead> se utiliza para agrupar el contenido del encabezado en una tabla HTML. El
+            elemento <thead> se usa junto con los elementos <tbody> y <tfoot> para especificar cada parte de una tabla 
+            (encabezado, cuerpo, pie de página). -->
+
+                <tr> <!-- Cada fila de la tabla comienza con una <tr>y termina con una </tr>etiqueta.
+                    tr significa fila de mesa.-->
+
+                    <th>Día</th><!-- La etiqueta <th> define una celda de encabezado en una tabla HTML. Una tabla HTML tiene dos tipos de celdas:
+                        Celdas de encabezado: contiene información de encabezado (creada con el <th>elemento)
+                        Celdas de datos: contiene datos (creados con el elemento <td> )-->
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- La etiqueta <tbody> se utiliza para agrupar el contenido del cuerpo en una tabla HTML.
+            El <tbody>elemento se usa junto con los elementos <thead> y <tfoot> para especificar cada parte de una tabla 
+            (cuerpo, encabezado, pie de página).-->
+                <tr>
+                    <td>Lunes</td> <!-- El elemento HTML fila de tabla ( table row ) <tr>define una fila de celdas en una 
+                    tabla. Estas pueden ser una mezcla de elementos <td>y <th>. -->
+                    <td>08h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+
+    
+    <footer><!-- El Elemento HTML Footer (<footer>) representa un pie de página para el contenido de sección -->
+    
+        <h3 class="copyrigth">&copy; Copyrigth Barbería</h3>
+
+        <div class="footer-iconos">
+
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg>
+                </a>
+
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                </a>
+            
+        </div>
+        
+    </footer>
+
+    
+</body>
+</html>
